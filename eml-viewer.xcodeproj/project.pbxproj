@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8E9D37AB2F9A18F3006E9023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E9D37952F9A18F2006E9023 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E9D379C2F9A18F2006E9023;
+			remoteInfo = "eml-viewer";
+		};
+		8E9D37B52F9A18F3006E9023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E9D37952F9A18F2006E9023 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E9D379C2F9A18F2006E9023;
+			remoteInfo = "eml-viewer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E9D379D2F9A18F2006E9023 /* eml-viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eml-viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9D37AA2F9A18F3006E9023 /* eml-viewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eml-viewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9D37B42F9A18F3006E9023 /* eml-viewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eml-viewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8E9D379F2F9A18F2006E9023 /* eml-viewer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "eml-viewer";
+			sourceTree = "<group>";
+		};
+		8E9D37AD2F9A18F3006E9023 /* eml-viewerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "eml-viewerTests";
+			sourceTree = "<group>";
+		};
+		8E9D37B72F9A18F3006E9023 /* eml-viewerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "eml-viewerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E9D379A2F9A18F2006E9023 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9D37A72F9A18F3006E9023 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9D37B12F9A18F3006E9023 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E9D37942F9A18F2006E9023 = {
+			isa = PBXGroup;
+			children = (
+				8E9D379F2F9A18F2006E9023 /* eml-viewer */,
+				8E9D37AD2F9A18F3006E9023 /* eml-viewerTests */,
+				8E9D37B72F9A18F3006E9023 /* eml-viewerUITests */,
+				8E9D379E2F9A18F2006E9023 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E9D379E2F9A18F2006E9023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E9D379D2F9A18F2006E9023 /* eml-viewer.app */,
+				8E9D37AA2F9A18F3006E9023 /* eml-viewerTests.xctest */,
+				8E9D37B42F9A18F3006E9023 /* eml-viewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E9D379C2F9A18F2006E9023 /* eml-viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9D37BE2F9A18F3006E9023 /* Build configuration list for PBXNativeTarget "eml-viewer" */;
+			buildPhases = (
+				8E9D37992F9A18F2006E9023 /* Sources */,
+				8E9D379A2F9A18F2006E9023 /* Frameworks */,
+				8E9D379B2F9A18F2006E9023 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8E9D379F2F9A18F2006E9023 /* eml-viewer */,
+			);
+			name = "eml-viewer";
+			packageProductDependencies = (
+			);
+			productName = "eml-viewer";
+			productReference = 8E9D379D2F9A18F2006E9023 /* eml-viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E9D37A92F9A18F3006E9023 /* eml-viewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9D37C12F9A18F3006E9023 /* Build configuration list for PBXNativeTarget "eml-viewerTests" */;
+			buildPhases = (
+				8E9D37A62F9A18F3006E9023 /* Sources */,
+				8E9D37A72F9A18F3006E9023 /* Frameworks */,
+				8E9D37A82F9A18F3006E9023 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E9D37AC2F9A18F3006E9023 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8E9D37AD2F9A18F3006E9023 /* eml-viewerTests */,
+			);
+			name = "eml-viewerTests";
+			packageProductDependencies = (
+			);
+			productName = "eml-viewerTests";
+			productReference = 8E9D37AA2F9A18F3006E9023 /* eml-viewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E9D37B32F9A18F3006E9023 /* eml-viewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E9D37C42F9A18F3006E9023 /* Build configuration list for PBXNativeTarget "eml-viewerUITests" */;
+			buildPhases = (
+				8E9D37B02F9A18F3006E9023 /* Sources */,
+				8E9D37B12F9A18F3006E9023 /* Frameworks */,
+				8E9D37B22F9A18F3006E9023 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E9D37B62F9A18F3006E9023 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8E9D37B72F9A18F3006E9023 /* eml-viewerUITests */,
+			);
+			name = "eml-viewerUITests";
+			packageProductDependencies = (
+			);
+			productName = "eml-viewerUITests";
+			productReference = 8E9D37B42F9A18F3006E9023 /* eml-viewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E9D37952F9A18F2006E9023 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					8E9D379C2F9A18F2006E9023 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					8E9D37A92F9A18F3006E9023 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 8E9D379C2F9A18F2006E9023;
+					};
+					8E9D37B32F9A18F3006E9023 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 8E9D379C2F9A18F2006E9023;
+					};
+				};
+			};
+			buildConfigurationList = 8E9D37982F9A18F2006E9023 /* Build configuration list for PBXProject "eml-viewer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E9D37942F9A18F2006E9023;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8E9D379E2F9A18F2006E9023 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E9D379C2F9A18F2006E9023 /* eml-viewer */,
+				8E9D37A92F9A18F3006E9023 /* eml-viewerTests */,
+				8E9D37B32F9A18F3006E9023 /* eml-viewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E9D379B2F9A18F2006E9023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9D37A82F9A18F3006E9023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9D37B22F9A18F3006E9023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E9D37992F9A18F2006E9023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9D37A62F9A18F3006E9023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9D37B02F9A18F3006E9023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E9D37AC2F9A18F3006E9023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E9D379C2F9A18F2006E9023 /* eml-viewer */;
+			targetProxy = 8E9D37AB2F9A18F3006E9023 /* PBXContainerItemProxy */;
+		};
+		8E9D37B62F9A18F3006E9023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E9D379C2F9A18F2006E9023 /* eml-viewer */;
+			targetProxy = 8E9D37B52F9A18F3006E9023 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8E9D37BC2F9A18F3006E9023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E9D37BD2F9A18F3006E9023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8E9D37BF2F9A18F3006E9023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.langenstein-it.eml-viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8E9D37C02F9A18F3006E9023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.langenstein-it.eml-viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8E9D37C22F9A18F3006E9023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.langenstein-it.eml-viewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eml-viewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eml-viewer";
+			};
+			name = Debug;
+		};
+		8E9D37C32F9A18F3006E9023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.langenstein-it.eml-viewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eml-viewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eml-viewer";
+			};
+			name = Release;
+		};
+		8E9D37C52F9A18F3006E9023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.langenstein-it.eml-viewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "eml-viewer";
+			};
+			name = Debug;
+		};
+		8E9D37C62F9A18F3006E9023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.langenstein-it.eml-viewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "eml-viewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E9D37982F9A18F2006E9023 /* Build configuration list for PBXProject "eml-viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9D37BC2F9A18F3006E9023 /* Debug */,
+				8E9D37BD2F9A18F3006E9023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9D37BE2F9A18F3006E9023 /* Build configuration list for PBXNativeTarget "eml-viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9D37BF2F9A18F3006E9023 /* Debug */,
+				8E9D37C02F9A18F3006E9023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9D37C12F9A18F3006E9023 /* Build configuration list for PBXNativeTarget "eml-viewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9D37C22F9A18F3006E9023 /* Debug */,
+				8E9D37C32F9A18F3006E9023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E9D37C42F9A18F3006E9023 /* Build configuration list for PBXNativeTarget "eml-viewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E9D37C52F9A18F3006E9023 /* Debug */,
+				8E9D37C62F9A18F3006E9023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E9D37952F9A18F2006E9023 /* Project object */;
+}
