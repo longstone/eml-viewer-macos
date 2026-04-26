@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let document: EMLDocument
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        EmailView(message: document.message, rawData: document.rawData)
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(document: EMLDocument())
 }

@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Build artifacts
+build/
+dist/
+.build/
+.build-release/
+DerivedData/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# CI / local
+.address
+.env
+*.log
