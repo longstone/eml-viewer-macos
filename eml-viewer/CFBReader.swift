@@ -51,6 +51,11 @@ final class CFBReader {
         self.data = data
         let sectorShift      = data.u16LE(at: 0x1E)
         let miniSectorShift  = data.u16LE(at: 0x20)
+        // Per [MS-CFB]: sector shift is 0x0009 (v3, 512-byte) or 0x000C
+        // (v4, 4096-byte); mini sector shift is always 0x0006 (64-byte).
+        // Reject anything else so chain math can't produce negative ranges.
+        guard sectorShift == 9 || sectorShift == 12 else { return nil }
+        guard miniSectorShift == 6 else { return nil }
         let numFATSectors    = Int(data.u32LE(at: 0x2C))
         let firstDirSector   =      data.u32LE(at: 0x30)
         self.miniStreamCutoff = Int(data.u32LE(at: 0x38))
