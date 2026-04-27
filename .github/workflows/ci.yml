@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+    tags-ignore: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_26.0.app || sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Resolve version
+        id: vars
+        run: |
+          SHORT_SHA="${GITHUB_SHA::7}"
+          VERSION="0.0.0-${GITHUB_RUN_NUMBER}+${SHORT_SHA}"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "short_sha=$SHORT_SHA" >> "$GITHUB_OUTPUT"
+
+      - name: Run tests
+        run: |
+          xcodebuild test \
+            -project eml-viewer.xcodeproj \
+            -scheme eml-viewer \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Build release artifact
+        run: ./scripts/build-release.sh "${{ steps.vars.outputs.version }}"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: eml-viewer-${{ steps.vars.outputs.version }}
+          path: |
+            dist/eml-viewer-${{ steps.vars.outputs.version }}.zip
+            dist/eml-viewer-${{ steps.vars.outputs.version }}.zip.sha256
+          if-no-files-found: error
+          retention-days: 14
