@@ -115,3 +115,58 @@ jobs:
           files: |
             dist/eml-viewer-${{ needs.build.outputs.version }}.zip
             dist/eml-viewer-${{ needs.build.outputs.version }}.zip.sha256
+
+  bump-cask:
+    name: Open PR to homebrew-tap
+    needs: [build, release]
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tap
+        uses: actions/checkout@v4
+        with:
+          repository: longstone/homebrew-tap
+          token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+          path: tap
+
+      - name: Update cask
+        env:
+          VERSION: ${{ needs.build.outputs.version }}
+          SHA256: ${{ needs.build.outputs.sha256 }}
+        run: |
+          set -euo pipefail
+          mkdir -p tap/Casks
+          cat > tap/Casks/eml-viewer.rb <<RUBY
+          cask "eml-viewer" do
+            version "${VERSION}"
+            sha256  "${SHA256}"
+
+            url "https://github.com/longstone/eml-viewer-macos/releases/download/v#{version}/eml-viewer-#{version}.zip"
+            name "EML Viewer"
+            desc "Native macOS viewer for .eml and .msg email files"
+            homepage "https://github.com/longstone/eml-viewer-macos"
+
+            app "eml-viewer.app"
+
+            zap trash: [
+              "~/Library/Preferences/com.longstone.eml-viewer.plist",
+              "~/Library/Saved Application State/com.longstone.eml-viewer.savedState",
+            ]
+          end
+          RUBY
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          path: tap
+          token: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+          branch: eml-viewer-${{ needs.build.outputs.version }}
+          base: main
+          commit-message: "eml-viewer ${{ needs.build.outputs.version }}"
+          title: "eml-viewer ${{ needs.build.outputs.version }}"
+          body: |
+            Automated cask bump triggered by `${{ github.ref_name }}`.
+
+            - Release: https://github.com/longstone/eml-viewer-macos/releases/tag/${{ github.ref_name }}
+            - **sha256:** `${{ needs.build.outputs.sha256 }}`
+          delete-branch: true
