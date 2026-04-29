@@ -21,6 +21,13 @@ Once a release is published on GitHub:
 ```sh
 brew install --cask longstone/tap/eml-viewer
 ```
+### Caveat
+
+Due to the App is not signed it will be put in quarantine:
+
+`find /Applications/eml-viewer.app -exec xattr -d com.apple.quarantine {} \; 2>/dev/null
+qlmanage -r`
+
 
 To publish the cask you have two options:
 
