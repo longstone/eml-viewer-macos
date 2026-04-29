@@ -26,6 +26,7 @@
             <key>LSItemContentTypes</key>
             <array>
                 <string>com.microsoft.outlook.mail-message</string>
+                <string>com.microsoft.outlook.msg</string>
             </array>
         </dict>
     </array>
@@ -38,6 +39,29 @@
             <string>Outlook Message</string>
             <key>UTTypeConformsTo</key>
             <array>
+                <string>public.data</string>
+                <string>public.item</string>
+            </array>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>msg</string>
+                </array>
+                <key>public.mime-type</key>
+                <array>
+                    <string>application/vnd.ms-outlook</string>
+                </array>
+            </dict>
+        </dict>
+        <dict>
+            <key>UTTypeIdentifier</key>
+            <string>com.microsoft.outlook.msg</string>
+            <key>UTTypeDescription</key>
+            <string>Outlook Message</string>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>com.microsoft.outlook.mail-message</string>
                 <string>public.data</string>
                 <string>public.item</string>
             </array>

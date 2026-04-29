@@ -108,7 +108,7 @@ struct WelcomeView: View {
         panel.allowsMultipleSelection = false
         panel.canChooseDirectories = false
         panel.canChooseFiles = true
-        panel.allowedContentTypes = [.emailMessage, .outlookMessage]
+        panel.allowedContentTypes = [.emailMessage, .outlookMessage, .outlookMSG]
         if panel.runModal() == .OK, let url = panel.url {
             open(url: url)
         }

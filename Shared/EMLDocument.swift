@@ -16,10 +16,14 @@ extension UTType {
     /// imported type in Info.plist so the app advertises it to Launch Services.
     static let outlookMessage: UTType = UTType("com.microsoft.outlook.mail-message")
         ?? UTType(importedAs: "com.microsoft.outlook.mail-message")
+
+    /// Alternate Outlook .msg identifier registered by some macOS setups.
+    static let outlookMSG: UTType = UTType("com.microsoft.outlook.msg")
+        ?? UTType(importedAs: "com.microsoft.outlook.msg")
 }
 
 struct EMLDocument: FileDocument {
-    static var readableContentTypes: [UTType] { [.emailMessage, .outlookMessage] }
+    static var readableContentTypes: [UTType] { [.emailMessage, .outlookMessage, .outlookMSG] }
 
     let message: EMLMessage
     let rawData: Data
